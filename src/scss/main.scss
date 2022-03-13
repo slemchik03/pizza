@@ -1,0 +1,31 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "reset";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/index";
+
+// основные стили (будут применятся на разных старницах сайта)
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1210px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
